@@ -4,7 +4,7 @@ FROM java:7
 # Set ignite home
 ENV IGNITE_HOME /opt/ignite
 
-RUN mkdir -p IGNITE_HOME
+RUN mkdir -p $IGNITE_HOME
 
 # Set
 WORKDIR $IGNITE_HOME
