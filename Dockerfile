@@ -13,11 +13,11 @@ RUN unzip ignite-fabric-1.0.0-incubating.zip
 
 RUN rm ignite-fabric-1.0.0-incubating.zip
 
-WORKDIR ignite-fabric-1.0.0-incubating
+WORKDIR ./ignite-fabric-1.0.0-incubating
 
-ADD ignite-ec2-config.xml .
+ADD ignite-ec2-config.xml ./
 
-ADD startup.sh .
+ADD startup.sh ./
 
 RUN chmod +x startup.sh
 
