@@ -17,11 +17,8 @@ RUN mv ignite-fabric-1.0.0-incubating ignite
 
 WORKDIR ./ignite
 
-# Use aws optional libs.
-RUN cp -R ./libs/optional/ignite-aws/* ./libs/
-
 # Copy script and default config for ec2
-ADD ignite-ec2-config.xml ./
+ADD ignite-mesos-config.xml ./
 
 ADD startup.sh ./
 
