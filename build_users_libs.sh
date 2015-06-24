@@ -38,5 +38,3 @@ if [ ! -z "$BUILD_CMD" ]; then
 else
   mvn clean package
 fi
-
-find user-repo/ -regextype posix-extended -regex ".*(jar|zip)" -exec cp {} . \;
