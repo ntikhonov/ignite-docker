@@ -16,7 +16,6 @@
 # limitations under the License.
 #
 
-
 if [ -z $GIT_REPO ]; then
   echo Users git repo is not provided.
 
