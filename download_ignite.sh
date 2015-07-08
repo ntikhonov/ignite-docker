@@ -46,4 +46,8 @@ if [ $IGNITE_SOURCE = "APACHE" ]; then
   download http://tiny.cc/updater/download_ignite.php
 fi
 
+if [ ! -z $LICENCE_URL ]; then
+  wget -O ignite/*/gridgain-license.xml $LICENCE_URL
+fi
+
 echo "Unsupported IGNITE_SOURCE type: ${IGNITE_SOURCE}"
