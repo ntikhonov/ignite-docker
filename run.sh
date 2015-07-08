@@ -29,6 +29,10 @@ fi
 
 if [ -z $SKIP_DOWNLOAD ]; then
   IGNITE_VERSION=$IGNITE_VERSION ./download_ignite.sh
+
+  if [ ! -z $LICENCE_URL ]; then
+    wget -O ignite/*/gridgain-license.xml $LICENCE_URL
+  fi
 fi
 
 ./execute.sh
